@@ -200,6 +200,7 @@ All colors MUST be HSL.
     opacity: 0;
     transition: opacity 0.3s ease;
     mix-blend-mode: overlay;
+    pointer-events: none;
   }
   
   .project-tile:hover::after {
