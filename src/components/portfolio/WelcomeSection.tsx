@@ -95,7 +95,7 @@ const WelcomeSection = () => {
           
           {/* Tech badges */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12 animate-fade-in delay-1000 px-4">
-            {['React', 'Python', 'TypeScript', 'AI/ML', 'Leadership'].map((tech, index) => (
+            {['Python', 'C++', 'HTML', 'CSS', 'JavaScript', 'Leadership'].map((tech, index) => (
               <span 
                 key={tech}
                 className={`px-3 sm:px-4 py-2 glass-card text-xs sm:text-sm font-medium hover-cyber transition-all duration-300 delay-${index * 100} touch-target`}

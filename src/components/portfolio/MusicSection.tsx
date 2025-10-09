@@ -73,7 +73,7 @@ const MusicSection = () => {
             
             <div className="mt-6 flex justify-center gap-4">
               <a 
-                href="https://spotify.com/dhruvacodes" 
+                href="https://open.spotify.com/track/5tVthfIOdl0JxBIwLrR1hg" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -81,15 +81,15 @@ const MusicSection = () => {
                 <i className="fab fa-spotify text-xl"></i>
               </a>
               <a 
-                href="https://soundcloud.com/dhruvacodes" 
+                href="https://music.apple.com/th/album/the-lost-light/1791853621" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
-                <i className="fab fa-soundcloud text-xl"></i>
+                <i className="fab fa-apple text-xl"></i>
               </a>
               <a 
-                href="https://youtube.com/dhruvacodes" 
+                href="https://www.youtube.com/channel/UCHLooarCfbB5C0STgMx6teA" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"

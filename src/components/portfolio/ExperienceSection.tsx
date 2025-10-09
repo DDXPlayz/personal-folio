@@ -55,11 +55,6 @@ const ExperienceSection = () => {
       description: 'Coordinated toy collection and distribution to underprivileged children.',
       impact: '200+ toys donated'
     },
-    {
-      title: 'Book Translation Project',
-      description: 'Translated educational content to make learning accessible across languages.',
-      impact: '5 books translated'
-    }
   ];
 
   return (

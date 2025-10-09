@@ -14,7 +14,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://github.com/dhruvacodes" 
+                href="https://github.com/DDXPlayz" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -22,7 +22,7 @@ const Footer = () => {
                 <i className="fab fa-github text-xl"></i>
               </a>
               <a 
-                href="https://linkedin.com/in/dhruvacodes" 
+                href="https://www.linkedin.com/in/dhruva-goyal-bb57a0342/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -30,12 +30,20 @@ const Footer = () => {
                 <i className="fab fa-linkedin text-xl"></i>
               </a>
               <a 
-                href="https://twitter.com/dhruvacodes" 
+                href="https://www.instagram.com/ddxplayz/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <i className="fab fa-twitter text-xl"></i>
+                <i className="fab fa-instagram text-xl"></i>
+              </a>
+              <a 
+                href="https://www.youtube.com/channel/UCHLooarCfbB5C0STgMx6teA" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <i className="fab fa-youtube text-xl"></i>
               </a>
             </div>
           </div>
@@ -65,10 +73,10 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-primary">Get In Touch</h3>
             <div className="space-y-2">
               <a 
-                href="mailto:dhruva@example.com" 
+                href="mailto:dhruvagoyal102@gmail.com" 
                 className="block text-muted-foreground hover:text-primary transition-colors"
               >
-                dhruva@example.com
+                dhruvagoyal102@gmail.com
               </a>
               <p className="text-muted-foreground">Available for collaborations</p>
               <p className="text-muted-foreground">Open to exciting opportunities</p>

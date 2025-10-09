@@ -8,8 +8,8 @@ const ProjectsSection = () => {
       description: 'A revolutionary multilingual chat application with real-time translation capabilities, breaking down language barriers for global communication.',
       image: linguaImage,
       tech: ['React', 'JavaScript', 'Translation API', 'Real-time Chat'],
-      github: 'https://github.com/dhruvacodes',
-      live: 'https://lingua-demo.com',
+      github: 'https://github.com/DDXPlayz/Lingua-Multilingual-Chat-App',
+      live: null,
       featured: true
     },
     {
@@ -17,8 +17,8 @@ const ProjectsSection = () => {
       description: 'Smart AI-powered study scheduler that adapts to student learning patterns and optimizes study sessions for maximum efficiency.',
       image: aiImage,
       tech: ['Python', 'AI/ML', 'Flask', 'Data Analytics'],
-      github: 'https://github.com/dhruvacodes',
-      live: 'https://study-planner.com',
+      github: 'https://github.com/DDXPlayz/Task-Scheduler',
+      live: 'https://task-scheduler-lilac.vercel.app/',
       featured: true
     },
     {
@@ -26,8 +26,8 @@ const ProjectsSection = () => {
       description: 'Complete F1 in Schools team portfolio featuring pit display game, fundraising campaigns, and team achievements.',
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
       tech: ['HTML', 'CSS', 'JavaScript', 'Game Development'],
-      github: 'https://github.com/dhruvacodes',
-      live: 'https://anantam-racing.com',
+      github: 'https://github.com/DDXPlayz/Anantam',
+      live: 'https://anantamracing.com/',
       featured: true
     }
   ];
@@ -77,20 +77,22 @@ const ProjectsSection = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg text-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground text-sm"
+                    className="flex-1 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg text-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground text-sm inline-flex items-center justify-center"
                   >
                     <i className="fab fa-github mr-2"></i>
                     Code
                   </a>
-                  <a 
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-center transition-all duration-300 hover:bg-primary-glow text-sm"
-                  >
-                    <i className="fas fa-external-link-alt mr-2"></i>
-                    Live
-                  </a>
+                  {project.live && (
+                    <a 
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-center transition-all duration-300 hover:bg-primary-glow text-sm inline-flex items-center justify-center"
+                    >
+                      <i className="fas fa-external-link-alt mr-2"></i>
+                      Live
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -100,7 +102,7 @@ const ProjectsSection = () => {
         <div className="text-center mt-12">
           <a 
             id="profile-link"
-            href="https://github.com/dhruvacodes" 
+            href="https://github.com/DDXPlayz" 
             target="_blank"
             rel="noopener noreferrer"
             className="btn-hero inline-flex items-center justify-center"

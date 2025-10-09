@@ -49,8 +49,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <a href="mailto:dhruva@example.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    dhruva@example.com
+                  <a href="mailto:dhruvagoyal102@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    dhruvagoyal102@gmail.com
                   </a>
                 </div>
               </div>
@@ -80,7 +80,7 @@ const ContactSection = () => {
               <h4 className="font-semibold mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a 
-                  href="https://github.com/dhruvacodes" 
+                  href="https://github.com/DDXPlayz" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -88,7 +88,7 @@ const ContactSection = () => {
                   <i className="fab fa-github text-xl"></i>
                 </a>
                 <a 
-                  href="https://linkedin.com/in/dhruvacodes" 
+                  href="https://www.linkedin.com/in/dhruva-goyal-bb57a0342/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -96,20 +96,20 @@ const ContactSection = () => {
                   <i className="fab fa-linkedin text-xl"></i>
                 </a>
                 <a 
-                  href="https://twitter.com/dhruvacodes" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-                >
-                  <i className="fab fa-twitter text-xl"></i>
-                </a>
-                <a 
-                  href="https://instagram.com/dhruvacodes" 
+                  href="https://www.instagram.com/ddxplayz/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
                   <i className="fab fa-instagram text-xl"></i>
+                </a>
+                <a 
+                  href="https://www.youtube.com/channel/UCHLooarCfbB5C0STgMx6teA" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-secondary hover:bg-primary rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                >
+                  <i className="fab fa-youtube text-xl"></i>
                 </a>
               </div>
             </div>
