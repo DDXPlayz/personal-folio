@@ -62,7 +62,7 @@ const MusicSection = () => {
             </div>
             
             <a 
-              href="https://dhruva-music.com" 
+              href="https://ddxplayz.github.io/TheLostLight/" 
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero inline-flex items-center justify-center"
