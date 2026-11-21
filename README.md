@@ -3,7 +3,12 @@
 My personal portfolio site — a single scrolling page with a hand-written
 particle system behind it.
 
-**[Live → portfolio-ddxplayzs-projects.vercel.app](https://portfolio-ddxplayzs-projects.vercel.app)**
+> **There is no working public URL for this site right now.** The address
+> recorded for it, `portfolio-ddxplayzs-projects.vercel.app`, is a Vercel
+> *dashboard* URL — it returns HTTP 200 and the page title *"Login – Vercel"*,
+> which is how it passed an earlier automated link check. The deployment itself
+> either was removed or lives at an address not recorded anywhere in this
+> repository. Run it locally with the steps below.
 
 ---
 
@@ -74,7 +79,7 @@ No environment variables, no backend.
 
 | Claim | How it was checked |
 |---|---|
-| Live at `portfolio-ddxplayzs-projects.vercel.app` | HTTP 200, checked 2026-11-21 |
+| **Not live** | `portfolio-ddxplayzs-projects.vercel.app` returns HTTP 200 but serves Vercel's login page, title `Login – Vercel` — **checked 2026-11-21**. A 200 was mistaken for a working deployment by an earlier audit |
 | Builds from a bare clone | `npm install && npm run build` — **run, passes** |
 | The OG tags no longer reference the generator | **run in a browser** against the built output; no `lovable.dev` reference remains in `index.html` |
 | No age framing left | grepped the whole of `src/` and `index.html` — zero matches |
