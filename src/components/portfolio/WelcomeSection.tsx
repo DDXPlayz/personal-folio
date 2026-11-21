@@ -65,8 +65,8 @@ const WelcomeSection = () => {
           </p>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-in-right delay-300 px-4">
-            At 15, I'm building the future with cutting-edge code, leading teams to achieve ambitious goals, 
-            and creating melodies that inspire innovation.
+            I build complete software — native mobile, 3D web, simulation and AI — lead an
+            engineering team, and write music.
           </p>
         </div>
         

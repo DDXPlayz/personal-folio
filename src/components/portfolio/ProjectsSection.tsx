@@ -2,32 +2,65 @@ import linguaImage from '@/assets/lingua-project.jpg';
 import aiImage from '@/assets/ai-project-bg.jpg';
 
 const ProjectsSection = () => {
+  // Six projects chosen for spread of capability rather than recency: native
+  // mobile, full-stack 3D commerce, simulation, deterministic geometry,
+  // creative 3D and a real payment flow. Every description here is checked
+  // against what the code actually does — an earlier version of this list
+  // advertised an "AI-powered" study planner written in "Python, AI/ML, Flask"
+  // that is in fact a deterministic TypeScript scheduler with no AI in it.
   const projects = [
     {
-      title: 'Lingua',
-      description: 'A revolutionary multilingual chat application with real-time translation capabilities, breaking down language barriers for global communication.',
-      image: linguaImage,
-      tech: ['React', 'JavaScript', 'Translation API', 'Real-time Chat'],
-      github: 'https://github.com/DDXPlayz/Lingua-Multilingual-Chat-App',
+      title: 'VIBES',
+      description: 'A handloom saree house where one phone photograph becomes a reusable 3D asset: the cloth is found in the image, draped on a mannequin by a position-based cloth solver, lit, rendered from every angle and published as a product page.',
+      image: aiImage,
+      tech: ['Next.js 15', 'React Three Fiber', 'Prisma', 'Cloth simulation'],
+      github: 'https://github.com/DDXPlayz/vibes',
       live: null,
       featured: true
     },
     {
-      title: 'AI Study Planner',
-      description: 'Smart AI-powered study scheduler that adapts to student learning patterns and optimizes study sessions for maximum efficiency.',
-      image: aiImage,
-      tech: ['Python', 'AI/ML', 'Flask', 'Data Analytics'],
-      github: 'https://github.com/DDXPlayz/Task-Scheduler',
-      live: 'https://task-scheduler-lilac.vercel.app/',
+      title: 'Beyond the Race',
+      description: 'A team presentation built as a film. The page never scrolls — the wheel scrubs one GSAP timeline through twelve three.js environments on a single camera path with no cuts.',
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
+      tech: ['three.js', 'GSAP', 'WebGL', 'Vite'],
+      github: 'https://github.com/DDXPlayz/beyond-the-race',
+      live: 'https://vp.anantamracing.com/',
       featured: true
     },
     {
-      title: 'Anantam Racing Portfolio',
-      description: 'Complete F1 in Schools team portfolio featuring pit display game, fundraising campaigns, and team achievements.',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
-      tech: ['HTML', 'CSS', 'JavaScript', 'Game Development'],
-      github: 'https://github.com/DDXPlayz/Anantam',
-      live: 'https://anantamracing.com/',
+      title: 'Tech Verify',
+      description: 'Drop a CAD export in the browser and every STEM Racing regulation is checked against the real geometry in under a tenth of a second. Anything geometry cannot prove is reported as needing manual verification rather than guessed.',
+      image: aiImage,
+      tech: ['TypeScript', 'three.js', 'Computational geometry'],
+      github: 'https://github.com/DDXPlayz/techverify',
+      live: 'https://tools.anantamracing.com/techverify',
+      featured: true
+    },
+    {
+      title: 'Wheel Physics Lab',
+      description: 'A wheel and bearing simulator built on the insight that the wheels are passive flywheels spun up by ground friction alone, with Monte Carlo sweeps over manufacturing tolerances.',
+      image: aiImage,
+      tech: ['Simulation', 'Numerical methods', 'JavaScript'],
+      github: 'https://github.com/DDXPlayz/wheel-physics-lab',
+      live: 'https://anantamracing.com/wheel_physics_sim/',
+      featured: true
+    },
+    {
+      title: 'Anantam Tickets',
+      description: 'The ticketing system that ran a launch event: Razorpay payments with server-side signature verification, tickets composed as images and emailed, and QR verification at the gate.',
+      image: aiImage,
+      tech: ['Flask', 'Razorpay', 'Pillow', 'SQLite'],
+      github: 'https://github.com/DDXPlayz/anantam-tickets',
+      live: 'https://tickets.anantamracing.com/',
+      featured: true
+    },
+    {
+      title: 'Lingua',
+      description: 'Multilingual chat that expands chat shorthand into whole words before translating, so the translator never sees "brb". Flask and SQLite with a local transformer model for spelling correction.',
+      image: linguaImage,
+      tech: ['Python', 'Flask', 'Transformers', 'SQLite'],
+      github: null,
+      live: null,
       featured: true
     }
   ];
@@ -73,15 +106,20 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <a 
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg text-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground text-sm inline-flex items-center justify-center"
-                  >
-                    <i className="fab fa-github mr-2"></i>
-                    Code
-                  </a>
+                  {/* Guarded like the live link below: a project whose repository
+                      is private has github: null, and an <a> with no href is a
+                      dead button rather than an absent one. */}
+                  {project.github && (
+                    <a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg text-center transition-all duration-300 hover:bg-primary hover:text-primary-foreground text-sm inline-flex items-center justify-center"
+                    >
+                      <i className="fab fa-github mr-2"></i>
+                      Code
+                    </a>
+                  )}
                   {project.live && (
                     <a 
                       href={project.live}

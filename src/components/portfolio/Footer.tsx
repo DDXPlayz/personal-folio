@@ -9,8 +9,8 @@ const Footer = () => {
               <span className="text-lg font-semibold">Dhruva Goyal</span>
             </div>
             <p className="text-muted-foreground mb-4">
-              15-year-old developer passionate about creating innovative solutions 
-              through code, racing, and music.
+              Developer, STEM Racing engineer and music creator. Native mobile,
+              3D web, simulation and AI.
             </p>
             <div className="flex gap-4">
               <a 

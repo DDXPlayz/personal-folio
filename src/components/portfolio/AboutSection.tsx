@@ -51,7 +51,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className={`text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? 'animate-slide-in-right' : 'opacity-0'} px-4`}>
-            A passionate 15-year-old innovator reshaping the digital landscape.
+            Complete software across mobile, web, desktop, 3D, simulation and AI.
           </p>
         </div>
 
